@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign-up form">
+    <title>Basic sign-up form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- aside content -->
+    <aside id="aside-container">
+        <img src="./images/image.jpg" alt="forest image" id="aside-img" width="150px" height="150px">
+        <h2 id="aside-text">Sign-up form</h2>
+        <h6 id="aside-img-owner">Photo by <a href="https://unsplash.com/@emilykrohn" target="_blank">Emily Krohn</a> on
+            <a href="https://unsplash.com" target="_blank">Unsplash</a>
+        </h6>
+    </aside>
+    <!-- header content -->
+    <header id="header-container">
+        <h1 id="header-text">This is not a real online service! Sign up now to get started.</h1>
+    </header>
+    <!-- main content -->
+    <main id="main-container">
+        <h3 id="main-container-header">Let's do this!</h3>
+
+        <div id="form-container">
+            <fieldset class="fieldset-container">
+                <form class="form-child">
+                    <label for="first-name" class="label-area">FIRST NAME</label><br>
+                    <input type="text" id="first-name" name="first-name" class="input-area">
+                </form>
+                <form class="form-child">
+                    <label for="last-name" class="label-area">LAST NAME</label><br>
+                    <input type="text" id="last-name" name="last-name" class="input-area">
+                </form>
+            </fieldset>
+
+            <fieldset class="fieldset-container">
+                <form class="form-child">
+                    <label for="email" class="label-area">EMAIL</label><br>
+                    <input type="email" id="email" name="email" class="input-area">
+                </form>
+                <form class="form-child">
+                    <label for="phone-numer" class="label-area">PHONE NUMBER</label><br>
+                    <input type="tel" id="phone-number" name="phone-number" class="input-area">
+                </form>
+            </fieldset>
+
+            <fieldset class="fieldset-container">
+                <form class="form-child">
+                    <label for="password" class="label-area">PASSWORD</label><br>
+                    <input type="password" id="password" name="password" class="input-area">
+                </form>
+                <form class="form-child">
+                    <label for="confirm-password" class="label-area">CONFIRM PASSWORD</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" class="input-area">
+                </form>
+            </fieldset>  
+            
+            <div id="newsletter-check">
+                <input type="checkbox" id="newsletter" name="news_letter">
+                <label for="newsletter">Send me the news letter</label>
+            </div>
+        </div>
+
+        <div id="submission-container">
+            <button type="submit">Create Account</button>
+            <div>Already have an account? <a href="./index.html" target="_blank">Log in</a></div>
+        </div>
+    </main>
+
+    <footer id="footer-container">
+        <h6 id="footerText">Copyright © 2022 Askalamentor</h6>
+            <a href="https://github.com/askalamentor" target="_blank">
+                <img id="githubImage" src="./images/githubImage.png" 
+                 alt="image to link github account">
+    </footer>
+
+</body>
+
+</html>
