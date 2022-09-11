@@ -1,5 +1,6 @@
 :root {
     --white: antiquewhite;
+    --white-background: rgb(243, 241, 241);
     --black: rgb(19, 18, 18);
     --green-text: rgb(106, 196, 106);
     --aside-text-size: 65px;
@@ -56,9 +57,17 @@ body {
 
 /* header container */ 
 #header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 70%;
     height: 20%;
     float: right;
+    background-color: var(--white-background);
+}
+
+#header-text {
+    color: var(--black);
 }
 
 /* main container */
