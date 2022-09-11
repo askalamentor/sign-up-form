@@ -32,33 +32,36 @@
             <fieldset class="fieldset-container">
                 <form class="form-child">
                     <label for="first-name" class="label-area">FIRST NAME</label><br>
-                    <input type="text" id="first-name" name="first-name" class="input-area">
+                    <input type="text" id="first-name" name="first-name" class="input-area" required>
                 </form>
                 <form class="form-child">
                     <label for="last-name" class="label-area">LAST NAME</label><br>
-                    <input type="text" id="last-name" name="last-name" class="input-area">
+                    <input type="text" id="last-name" name="last-name" class="input-area" required>
                 </form>
             </fieldset>
 
             <fieldset class="fieldset-container">
                 <form class="form-child">
                     <label for="email" class="label-area">EMAIL</label><br>
-                    <input type="email" id="email" name="email" class="input-area">
+                    <input type="email" id="email" name="email" class="input-area" 
+                    placeholder="email@example.com" required>
                 </form>
                 <form class="form-child">
                     <label for="phone-numer" class="label-area">PHONE NUMBER</label><br>
-                    <input type="tel" id="phone-number" name="phone-number" class="input-area">
+                    <input type="tel" id="phone-number" name="phone-number" class="input-area" required>
                 </form>
             </fieldset>
 
             <fieldset class="fieldset-container">
                 <form class="form-child">
                     <label for="password" class="label-area">PASSWORD</label><br>
-                    <input type="password" id="password" name="password" class="input-area">
+                    <input type="password" id="password" name="password" class="input-area" 
+                    minlength="6" required>
                 </form>
                 <form class="form-child">
                     <label for="confirm-password" class="label-area">CONFIRM PASSWORD</label><br>
-                    <input type="password" id="confirm-password" name="confirm-password" class="input-area">
+                    <input type="password" id="confirm-password" name="confirm-password" class="input-area" 
+                    minlength="6" required>
                 </form>
             </fieldset>  
             
@@ -80,7 +83,5 @@
                 <img id="githubImage" src="./images/githubImage.png" 
                  alt="image to link github account">
     </footer>
-
 </body>
-
 </html>
