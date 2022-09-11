@@ -2,9 +2,15 @@
     --white: antiquewhite;
     --white-background: rgb(243, 241, 241);
     --black: rgb(19, 18, 18);
+    --grey: rgb(141, 178, 212);
     --green-text: rgb(106, 196, 106);
+
     --aside-text-size: 65px;
+    --main-header-size: 40px;
     --bottom-info-size: 20px;
+    --input-label-size: 20px;
+
+    --form-elements-margin: 15px 60px 15px 60px;
 }
 
 *, html {
@@ -67,19 +73,95 @@ body {
 }
 
 #header-text {
+    font-size: var(--main-header-size);
     color: var(--black);
 }
 
 /* main container */
 #main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     width: 70%;
     height: 70%;
     float: right;
 }
 
-/* footer container */
-#footer-container {
-    width: 70%;
-    height: 10%;
-    float: right;
+#main-container-header {
+    font-size: var(--main-header-size);
+    font-weight: 700;
+    padding: 50px 0px 50px 60px;
 }
+
+#form-container {
+    width: 100%;
+}
+
+.fieldset-container {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border: 0;
+}
+
+.input-container {
+    margin: var(--form-elements-margin);
+}
+
+.label-area {
+    font-size: var(--input-label-size);
+    font-weight: 600;
+}
+
+.input-area {
+    width: 350px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--grey);
+}
+
+#newsletter-container {
+    display: flex;
+    align-items: center;
+    margin: var(--form-elements-margin);
+
+}
+
+#newsletter-container > label {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+#newsletter {
+    height: 25px;
+    width: 25px;
+}
+/* ----------------- submit button ---------------------*/
+#submission-container {
+    background-color: var(--white-background);
+}
+
+#submission-container > button[type="submit"] {
+    height: 50px;
+    width: 300px;
+    color: var(--white);
+    background-color: var(--green-text);
+    font-size: var(--input-label-size);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin: 30px 60px 5px 60px;
+}
+
+#submission-container > div {
+    padding: 5px 60px 50px 60px;
+    font-size: 25px;
+}
+
+#submission-container > div > a {
+    color: green;
+}
+

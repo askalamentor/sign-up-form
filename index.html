@@ -14,8 +14,8 @@
 <body>
     <!-- aside content -->
     <aside id="aside-container">
-        <img src="./images/image.jpg" alt="forest image" id="aside-img" width="150px" height="150px">
-        <h2 id="aside-text">Sign-up form</h2>
+        <img src="./images/image.jpg" alt="forest image" id="aside-img">
+        <h2 id="aside-text">Sign up form</h2>
         <h6 id="aside-img-owner">Photo by <a href="https://unsplash.com/@emilykrohn" target="_blank">Emily Krohn</a> on
             <a href="https://unsplash.com" target="_blank">Unsplash</a>
         </h6>
@@ -28,17 +28,17 @@
     <main id="main-container">
         <h3 id="main-container-header">Let's do this!</h3>
 
-        <form class="form-container">
+        <form id="form-container" autocomplete="off">
             <!-- user inputs -->
             <fieldset class="fieldset-container">
-                <div id="signup-firstname">
+                <div id="signup-firstname" class="input-container">
                     <label for="first-name" class="label-area">FIRST NAME</label><br>
                     <input type="text" id="first-name" name="first-name" class="input-area" 
                     maxlength="30"
                     required><br>
                 </div>
 
-                <div id="signup-lastname">
+                <div id="signup-lastname" class="input-container">
                     <label for="last-name" class="label-area">LAST NAME</label><br>
                     <input type="text" id="last-name" name="last-name" class="input-area"  
                     maxlength="30"    
@@ -47,7 +47,7 @@
             </fieldset>
 
             <fieldset class="fieldset-container">
-                <div id="signup-email">
+                <div id="signup-email" class="input-container">
                     <label for="email" class="label-area">EMAIL</label><br>
                     <input type="email" id="email" name="email" class="input-area" placeholder="email@example.com"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -55,7 +55,7 @@
                     required>
                 </div>
 
-                <div id="signup-phonenumber">
+                <div id="signup-phonenumber" class="input-container">
                     <label for="phone-number" class="label-area">PHONE NUMBER</label><br>
                     <input type="tel" id="phone-number" name="phone-number" class="input-area" 
                     placeholder="5..."
@@ -66,7 +66,7 @@
             </fieldset>
 
             <fieldset class="fieldset-container">
-                <div id="signup-password">
+                <div id="signup-password" class="input-container">
                     <label for="password" class="label-area">PASSWORD</label><br>
                     <input type="password" id="password" name="password" class="input-area"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
@@ -74,7 +74,7 @@
                     required>
                 </div>
 
-                <div id="signup-confirmpassword">
+                <div id="signup-confirmpassword" class="input-container">
                     <label for="confirm-password" class="label-area">CONFIRM PASSWORD</label><br>
                     <input type="password" id="confirm-password" name="confirm-password" class="input-area"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"    
@@ -97,7 +97,8 @@
     <footer id="footer-container">
         <h6 id="footerText">Copyright © 2022 Askalamentor</h6>
         <a href="https://github.com/askalamentor" target="_blank">
-            <img id="githubImage" src="./images/githubImage.png" alt="image to link github account">
+            <img id="githubImage" src="./images/githubImage.png" alt="image to link github account"
+            width="50" height="50">
     </footer>
 </body>
 
