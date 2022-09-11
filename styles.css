@@ -165,3 +165,39 @@ body {
     color: green;
 }
 
+/* footer container */
+#footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 10%;
+    float: right;
+    background-color: var(--green-text);
+}
+
+#footer-text {
+    font-size: var(--bottom-info-size);
+}
+
+#githubImage {
+    height: 28px;
+    width: 28px;
+    border-radius: 25px;
+    margin: auto 8px;
+}
+
+#githubImage:hover {
+    animation: rotate-animation 0.5s ease-out;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
