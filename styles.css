@@ -207,8 +207,17 @@ body {
 }
 
 /* pseudo class of form elements */
-.input-area:checked {
-    border: 2px solid blue;
+#submission-container > button[type="submit"]:hover {
+    transform: translateY(-2px);
+}
+
+#submission-container > button[type="submit"]:active {
+    transform: translateY(0px);
+}
+
+.input-area:focus {
+    outline-style: none;
+    border: 2px solid var(--white-background); 
 }
 
 .input-area:not(:focus):not(:placeholder-shown):invalid {
