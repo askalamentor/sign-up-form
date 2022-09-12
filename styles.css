@@ -4,6 +4,9 @@
     --black: rgb(19, 18, 18);
     --grey: rgb(141, 178, 212);
     --green-text: rgb(106, 196, 106);
+    
+    --green-valid: green;
+    --red-invalid: red;
 
     --aside-text-size: 65px;
     --main-header-size: 40px;
@@ -94,6 +97,7 @@ body {
     padding: 50px 0px 50px 60px;
 }
 
+/* ------------------ form container ----------------------*/
 #form-container {
     width: 100%;
 }
@@ -117,11 +121,12 @@ body {
 .input-area {
     width: 350px;
     padding: 10px;
-    border-style: solid;
+    border: 2px solid var(--white-background);
     border-radius: 5px;
-    border-color: var(--grey);
+    background-color: var(--white-background);
 }
 
+/* ------------------- newsletter check -------------------*/
 #newsletter-container {
     display: flex;
     align-items: center;
@@ -199,5 +204,18 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* pseudo class of form elements */
+.input-area:checked {
+    border: 2px solid blue;
+}
+
+.input-area:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid var(--red-invalid);
+}
+
+.input-area:not(:focus):not(:placeholder-shown):valid {
+    border: 2px solid var(--green-valid);
 }
 

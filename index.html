@@ -77,14 +77,15 @@
                     <label for="password" class="label-area">PASSWORD</label><br>
                     <input type="password" id="password" name="password" class="input-area"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
-                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and between 8-16 characters"
+                    placeholder="Between 8-16 characters"   
                     required>
                 </div>
 
                 <div id="signup-confirmpassword" class="input-container">
                     <label for="confirm-password" class="label-area">CONFIRM PASSWORD</label><br>
                     <input type="password" id="confirm-password" name="confirm-password" class="input-area"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"    
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" 
                     required>
                 </div>
             </fieldset>
